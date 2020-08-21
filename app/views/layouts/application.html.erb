@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-light" style="background-color: #e1e7e8;">
+        <ul class="nav navbar-nav, list-inline">
+          <li class="nav-item active ">
+            <a class="nav-link" href="<%= posts_path %>">Статьи</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://vk.com/">Контакты</a>
+          </li>
+        </ul>
+    <%# <%= link_to 'Новая Статья', new_post_path, class: "btn btn-outline-primary pull-xs-right" %>
+
+        <ul class="nav navbar-nav, list-inline">
+          <% if user_signed_in? %>
+            <li class="nav-item">
+            <%= link_to "Выход", destroy_user_session_path, method: :delete, class: "nav-link"%> 
+          </li>
+          <% else %>
+          <li class="nav-item">
+            <%= link_to "Вход", new_user_session_path, class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Регистрация", new_user_registration_path, class: "nav-link" %>
+          </li>
+          <% end %>
+        </ul>
+      </nav>
+    </div>
+    <div class="container main">
+      <div class="row">
+        <div class="col-md-12">
+            <% flash.each do |name, message| %>
+            <button class="close" data-dismiss="alert"></button>
+            <div class="alert <%= bootstrap_class_for(name)%>">
+              <% message %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+      <%= yield %>
+    </div>
+  </body>
+</html>
