@@ -10639,3 +10639,1480 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 250ms (Views: 182.1ms | ActiveRecord: 21.0ms | Allocations: 13633)
 
 
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-08-21 15:17:38 +0300
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.8ms | Allocations: 194)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 12.0ms | Allocations: 1187)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 173ms (Views: 82.3ms | ActiveRecord: 0.0ms | Allocations: 9740)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-08-21 15:17:51 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 138)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 8.1ms | Allocations: 1234)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 54ms (Views: 49.5ms | ActiveRecord: 0.0ms | Allocations: 9701)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-08-21 15:18:24 +0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered collection of posts/_post.html.erb [5 times] (Duration: 13.8ms | Allocations: 2004)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  Rendered posts/index.html.erb within layouts/application (Duration: 39.5ms | Allocations: 4121)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 83ms (Views: 78.0ms | ActiveRecord: 1.4ms | Allocations: 12490)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2020-08-21 15:18:26 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:46:in `set_post'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 3.7ms | Allocations: 532)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 50ms (Views: 35.9ms | ActiveRecord: 0.4ms | Allocations: 9655)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2020-08-21 15:18:27 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:46:in `set_post'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 3.8ms | Allocations: 311)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 56ms (Views: 47.8ms | ActiveRecord: 0.3ms | Allocations: 9156)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2020-08-21 15:18:28 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:46:in `set_post'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 311)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 23.7ms | ActiveRecord: 0.2ms | Allocations: 9157)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2020-08-21 15:18:28 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:46:in `set_post'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 311)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 39ms (Views: 33.3ms | ActiveRecord: 1.2ms | Allocations: 9155)
+
+
+Started GET "/posts/1/edit" for 127.0.0.1 at 2020-08-21 15:18:29 +0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:46:in `set_post'
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 80.3ms | Allocations: 7032)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 82.9ms | Allocations: 7350)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 108ms (Views: 102.1ms | ActiveRecord: 0.2ms | Allocations: 16243)
+
+
+Started PATCH "/posts/1" for 127.0.0.1 at 2020-08-21 15:18:34 +0300
+Processing by PostsController#update as HTML
+  Parameters: {"authenticity_token"=>"+jQd8VTo/2K1eTGwJ5I/fl1cfCMp+jQzSMBvi5xsLTCstXRl4aghajDD3gFH/G3UqR4+HPjCyMfg7HAZ0idMhg==", "post"=>{"title"=>"First356789", "summary"=>"seresqsqsq", "body"=>"First body"}, "commit"=>"Сохранить", "id"=>"1"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:46:in `set_post'
+DEPRECATION WARNING: update_attributes is deprecated and will be removed from Rails 6.1 (please, use update instead) (called from update at /Users/tatana/blog/app/controllers/posts_controller.rb:30)
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:30:in `update'
+  [1m[36mPost Update (2.2ms)[0m  [1m[33mUPDATE "posts" SET "title" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["title", "First356789"], ["updated_at", "2020-08-21 12:18:34.495118"], ["id", 1]]
+  ↳ app/controllers/posts_controller.rb:30:in `update'
+  [1m[35m (9.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:30:in `update'
+Redirected to http://127.0.0.1:3000/posts/1
+Completed 302 Found in 49ms (ActiveRecord: 12.0ms | Allocations: 4191)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2020-08-21 15:18:34 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (2.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:46:in `set_post'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 312)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 72ms (Views: 65.2ms | ActiveRecord: 2.2ms | Allocations: 9158)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-08-21 15:18:42 +0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered collection of posts/_post.html.erb [5 times] (Duration: 8.4ms | Allocations: 2003)
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  Rendered posts/index.html.erb within layouts/application (Duration: 20.8ms | Allocations: 4100)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 53ms (Views: 49.4ms | ActiveRecord: 1.3ms | Allocations: 12468)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-08-21 15:18:45 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 138)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1235)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 42ms (Views: 38.3ms | ActiveRecord: 0.0ms | Allocations: 9707)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-08-21 15:18:51 +0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered collection of posts/_post.html.erb [5 times] (Duration: 11.4ms | Allocations: 2004)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  Rendered posts/index.html.erb within layouts/application (Duration: 18.0ms | Allocations: 4098)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 50ms (Views: 48.1ms | ActiveRecord: 0.6ms | Allocations: 12463)
+
+
+Started GET "/?page=2" for 127.0.0.1 at 2020-08-21 15:21:05 +0300
+Processing by PostsController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 5]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered collection of posts/_post.html.erb [2 times] (Duration: 12.3ms | Allocations: 492)
+  Rendered posts/index.html.erb within layouts/application (Duration: 42.7ms | Allocations: 1816)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 170ms (Views: 143.2ms | ActiveRecord: 1.5ms | Allocations: 10179)
+
+
+Started GET "/?page=1" for 127.0.0.1 at 2020-08-21 15:21:07 +0300
+Processing by PostsController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered collection of posts/_post.html.erb [5 times] (Duration: 5.3ms | Allocations: 2003)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  Rendered posts/index.html.erb within layouts/application (Duration: 13.7ms | Allocations: 4098)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 44ms (Views: 41.1ms | ActiveRecord: 0.8ms | Allocations: 12455)
+
+
+Started GET "/posts/4" for 127.0.0.1 at 2020-08-21 15:21:31 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:46:in `set_post'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 430)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 33ms (Views: 27.5ms | ActiveRecord: 0.4ms | Allocations: 9273)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-08-21 15:37:23 +0300
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.0ms | Allocations: 221)
+  Rendered devise/shared/_links.html.erb (Duration: 2.4ms | Allocations: 661)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 34.0ms | Allocations: 6446)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 279ms (Views: 246.2ms | ActiveRecord: 0.7ms | Allocations: 35890)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-08-21 15:37:39 +0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"+oBhgeBsFtp4HZyQKXFGGufYV0d7TM21XxvdufqaPtnB9KP97ph69d1aO/wj5D8gx9KXKUTus9rUUtApea/4Eg==", "user"=>{"email"=>"user1@mail.ru", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "user1@mail.ru"], ["LIMIT", 1]]
+  [1m[36mUser Create (2.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["email", "user1@mail.ru"], ["encrypted_password", "$2a$12$T3XOUp6mynhWC06BNH2YHe8BAhN8af4lpioIVHVBgn6rqttSqfrzi"], ["confirmation_token", "jh8kdDrKahjxivEein9Q"], ["confirmation_sent_at", "2020-08-21 12:37:40.376688"], ["created_at", "2020-08-21 12:37:40.376326"], ["updated_at", "2020-08-21 12:37:40.376326"]]
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  Rendering devise/mailer/confirmation_instructions.html.erb
+  Rendered devise/mailer/confirmation_instructions.html.erb (Duration: 1.6ms | Allocations: 256)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 16.2ms
+Delivered mail 5f3fc0148687a_9d713febb9036fe49106c@MacBook-Air-Tatana.local.mail (32.0ms)
+Date: Fri, 21 Aug 2020 15:37:40 +0300
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: user1@mail.ru
+Message-ID: <5f3fc0148687a_9d713febb9036fe49106c@MacBook-Air-Tatana.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome user1@mail.ru!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=jh8kdDrKahjxivEein9Q">Confirm my account</a></p>
+
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 679ms (ActiveRecord: 6.1ms | Allocations: 49782)
+
+
+Started GET "/" for 127.0.0.1 at 2020-08-21 15:37:40 +0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered collection of posts/_post.html.erb [5 times] (Duration: 9.2ms | Allocations: 2457)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  Rendered posts/index.html.erb within layouts/application (Duration: 41.9ms | Allocations: 10651)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 109ms (Views: 83.0ms | ActiveRecord: 2.7ms | Allocations: 23528)
+
+
+Started GET "/users/confirmation?confirmation_token=jh8kdDrKahjxivEein9Q" for ::1 at 2020-08-21 15:37:54 +0300
+Processing by Devise::ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"jh8kdDrKahjxivEein9Q"}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."confirmation_token" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["confirmation_token", "jh8kdDrKahjxivEein9Q"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Update (2.4ms)[0m  [1m[33mUPDATE "users" SET "confirmed_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["confirmed_at", "2020-08-21 12:37:54.420629"], ["updated_at", "2020-08-21 12:37:54.421802"], ["id", 2]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 39ms (ActiveRecord: 7.1ms | Allocations: 6605)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-08-21 15:37:54 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 280)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 12.2ms | Allocations: 2145)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 49ms (Views: 46.8ms | ActiveRecord: 0.0ms | Allocations: 11398)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-08-21 15:38:05 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 194)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1177)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 38ms (Views: 33.8ms | ActiveRecord: 0.0ms | Allocations: 9711)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-08-21 15:38:11 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"gBRZo7Dklcjo6EwuFwqvBearCWZAHccSFOmT4LmPCo5x5Mt0LC1bp+gFym6GSZwEit57FRZeun5vppaFoBpcCw==", "user"=>{"email"=>"user1@mail.ru", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "user1@mail.ru"], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 360ms (ActiveRecord: 1.1ms | Allocations: 3215)
+
+
+Started GET "/" for 127.0.0.1 at 2020-08-21 15:38:11 +0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered collection of posts/_post.html.erb [5 times] (Duration: 11.3ms | Allocations: 2011)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  Rendered posts/index.html.erb within layouts/application (Duration: 18.0ms | Allocations: 4108)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:26
+Completed 200 OK in 41ms (Views: 38.7ms | ActiveRecord: 1.0ms | Allocations: 13357)
+
+
+Started GET "/" for 127.0.0.1 at 2020-08-21 15:42:21 +0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered collection of posts/_post.html.erb [5 times] (Duration: 6.2ms | Allocations: 2024)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  Rendered posts/index.html.erb within layouts/application (Duration: 28.2ms | Allocations: 9998)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:26
+Completed 200 OK in 117ms (Views: 103.9ms | ActiveRecord: 3.3ms | Allocations: 29855)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2020-08-21 15:42:24 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:48:in `set_post'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 2.5ms | Allocations: 535)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:26
+Completed 200 OK in 38ms (Views: 30.7ms | ActiveRecord: 0.7ms | Allocations: 10504)
+
+
+Started GET "/posts/1/edit" for 127.0.0.1 at 2020-08-21 15:42:25 +0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:48:in `set_post'
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 12.2ms | Allocations: 1929)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 14.3ms | Allocations: 2247)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 41ms (Views: 31.4ms | ActiveRecord: 0.4ms | Allocations: 13619)
+
+
+Started GET "/posts/1/edit" for 127.0.0.1 at 2020-08-21 15:42:40 +0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:48:in `set_post'
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.9ms | Allocations: 971)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1048)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 41ms (Views: 34.8ms | ActiveRecord: 0.5ms | Allocations: 11267)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-08-21 17:32:14 +0300
+  [1m[35m (5.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered collection of posts/_post.html.erb [5 times] (Duration: 32.3ms | Allocations: 2005)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  Rendered posts/index.html.erb within layouts/application (Duration: 73.7ms | Allocations: 4125)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:26
+Completed 200 OK in 251ms (Views: 197.7ms | ActiveRecord: 1.7ms | Allocations: 13358)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2020-08-21 17:32:22 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:48:in `set_post'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 2.4ms | Allocations: 313)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:26
+Completed 200 OK in 49ms (Views: 43.1ms | ActiveRecord: 0.6ms | Allocations: 10011)
+
+
+Started GET "/posts/1/edit" for 127.0.0.1 at 2020-08-21 17:32:26 +0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:48:in `set_post'
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 8.0ms | Allocations: 972)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 8.6ms | Allocations: 1049)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 40ms (Views: 30.9ms | ActiveRecord: 0.5ms | Allocations: 11270)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2020-08-21 17:32:31 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/posts" for 127.0.0.1 at 2020-08-21 17:32:42 +0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered collection of posts/_post.html.erb [5 times] (Duration: 29.9ms | Allocations: 2003)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  Rendered posts/index.html.erb within layouts/application (Duration: 39.3ms | Allocations: 4096)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:26
+Completed 200 OK in 79ms (Views: 75.2ms | ActiveRecord: 1.3ms | Allocations: 13292)
+
+
+Started GET "/?page=2" for 127.0.0.1 at 2020-08-21 17:32:49 +0300
+Processing by PostsController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 5]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered collection of posts/_post.html.erb [2 times] (Duration: 1.5ms | Allocations: 492)
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 1817)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:26
+Completed 200 OK in 43ms (Views: 41.9ms | ActiveRecord: 0.4ms | Allocations: 11023)
+
+
+Started GET "/posts/6/edit" for 127.0.0.1 at 2020-08-21 17:32:52 +0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:48:in `set_post'
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 3.6ms | Allocations: 975)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1053)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 22.6ms | ActiveRecord: 0.5ms | Allocations: 11291)
+
+
+Started PATCH "/posts/6" for 127.0.0.1 at 2020-08-21 17:32:56 +0300
+Processing by PostsController#update as HTML
+  Parameters: {"authenticity_token"=>"hvA1fdHUc/2erlKxeaqXzULCkDlaz6Ht6b8cEe6BdGuVhOrlFGtPsrsQNVuaYGaiDoKHHA2o/yGr0QO9rncZBQ==", "post"=>{"title"=>"dcdccd", "summary"=>"dfsdfs", "body"=>"dsfdsfsdfsd"}, "commit"=>"Сохранить", "id"=>"6"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:48:in `set_post'
+DEPRECATION WARNING: update_attributes is deprecated and will be removed from Rails 6.1 (please, use update instead) (called from update at /Users/tatana/blog/app/controllers/posts_controller.rb:32)
+Redirected to http://127.0.0.1:3000/posts/6
+Completed 302 Found in 47ms (ActiveRecord: 0.9ms | Allocations: 3313)
+
+
+Started GET "/posts/6" for 127.0.0.1 at 2020-08-21 17:32:56 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:48:in `set_post'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 311)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:26
+Completed 200 OK in 22ms (Views: 20.1ms | ActiveRecord: 0.3ms | Allocations: 10001)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-08-21 17:32:59 +0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered collection of posts/_post.html.erb [5 times] (Duration: 3.8ms | Allocations: 2003)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  Rendered posts/index.html.erb within layouts/application (Duration: 8.4ms | Allocations: 4097)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:26
+Completed 200 OK in 146ms (Views: 144.2ms | ActiveRecord: 0.5ms | Allocations: 13299)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2020-08-21 17:33:13 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2020-08-21 20:03:46 +0300
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered collection of posts/_post.html.erb [5 times] (Duration: 30.0ms | Allocations: 2224)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  Rendered posts/index.html.erb within layouts/application (Duration: 69.9ms | Allocations: 4604)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:26
+Completed 200 OK in 232ms (Views: 196.4ms | ActiveRecord: 1.9ms | Allocations: 15146)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2020-08-21 20:03:48 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (1.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:48:in `set_post'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 3.1ms | Allocations: 529)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:26
+Completed 200 OK in 53ms (Views: 39.4ms | ActiveRecord: 1.6ms | Allocations: 10387)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2020-08-21 20:03:49 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:48:in `set_post'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 316)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:26
+Completed 200 OK in 51ms (Views: 47.8ms | ActiveRecord: 0.4ms | Allocations: 10004)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2020-08-21 20:03:50 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:48:in `set_post'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 316)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:26
+Completed 200 OK in 30ms (Views: 27.2ms | ActiveRecord: 0.6ms | Allocations: 9994)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2020-08-21 20:03:52 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users" for 127.0.0.1 at 2020-08-21 20:13:35 +0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2020-08-21 20:13:40 +0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered collection of posts/_post.html.erb [5 times] (Duration: 12.7ms | Allocations: 2223)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  Rendered posts/index.html.erb within layouts/application (Duration: 22.8ms | Allocations: 4603)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/tatana/blog/public/packs
+[Webpacker] Hash: 12e97fb33a45ebae0560
+Version: webpack 4.44.1
+Time: 2345ms
+Built at: 2020-08-21 20:13:47
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-00683d455665f4a7ae82.js    124 KiB  application  [emitted] [immutable]  application
+js/application-00683d455665f4a7ae82.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-00683d455665f4a7ae82.js js/application-00683d455665f4a7ae82.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 823 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:26
+Completed 200 OK in 7556ms (Views: 7551.1ms | ActiveRecord: 1.7ms | Allocations: 16441)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2020-08-21 20:13:59 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"tmp6IRupBpQ38qS+HFDbrQqCUfeKK+cm2BSG1rBuUduiQvNJQ5EFOVXO40wYq3lHJZr6woySckFtH4lsA8Hm6g=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 70ms (ActiveRecord: 0.3ms | Allocations: 3126)
+
+
+Started GET "/" for 127.0.0.1 at 2020-08-21 20:13:59 +0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered collection of posts/_post.html.erb [5 times] (Duration: 9.5ms | Allocations: 2007)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  Rendered posts/index.html.erb within layouts/application (Duration: 20.4ms | Allocations: 4105)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 68ms (Views: 65.4ms | ActiveRecord: 0.8ms | Allocations: 12500)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-08-21 20:21:41 +0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 4.5ms | Allocations: 625)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 61.9ms | Allocations: 2125)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 213ms (Views: 175.6ms | ActiveRecord: 0.0ms | Allocations: 11722)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-08-21 20:21:46 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"rsYqQkajEDaAWVHIgoDK0dpTNRQXlRPFfOABe2a6w5iNO2oEsle7M9KeEa29UnAO7Q6ohttPVcaFhXA1iD80AA==", "user"=>{"email"=>"user1@mail.ru", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "user1@mail.ru"], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 450ms (ActiveRecord: 1.6ms | Allocations: 3934)
+
+
+Started GET "/" for 127.0.0.1 at 2020-08-21 20:21:47 +0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered collection of posts/_post.html.erb [5 times] (Duration: 8.0ms | Allocations: 2010)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  Rendered posts/index.html.erb within layouts/application (Duration: 20.6ms | Allocations: 4126)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:26
+Completed 200 OK in 68ms (Views: 63.0ms | ActiveRecord: 3.1ms | Allocations: 13383)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2020-08-21 20:21:50 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"zMKZuby2U82HdqlysbimDynySo9AInhpd1Goan/fE6b4ijCaP5IiWk/bBypriI4IHxoFwsCOyw52X/z9JKaS9w=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 15ms (ActiveRecord: 0.3ms | Allocations: 2307)
+
+
+Started GET "/" for 127.0.0.1 at 2020-08-21 20:21:50 +0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered collection of posts/_post.html.erb [5 times] (Duration: 10.0ms | Allocations: 2006)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  Rendered posts/index.html.erb within layouts/application (Duration: 18.5ms | Allocations: 4102)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 98ms (Views: 95.1ms | ActiveRecord: 0.6ms | Allocations: 12488)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-08-21 20:28:50 +0300
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 4.2ms | Allocations: 211)
+  Rendered devise/shared/_links.html.erb (Duration: 1.5ms | Allocations: 149)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 32.1ms | Allocations: 1946)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 129ms (Views: 115.1ms | ActiveRecord: 0.0ms | Allocations: 11115)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-08-21 20:28:52 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 194)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 6.0ms | Allocations: 1186)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 59ms (Views: 48.8ms | ActiveRecord: 0.0ms | Allocations: 9727)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-08-21 20:28:57 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"3IeAxyfwK6VPEQdNlAj4dJ4MrV2VSCKgoJYt+QWr/lkFqFSptkZTGPr33EaYiVFlhaKopBuwDi0OSQznjP7Oqw==", "user"=>{"email"=>"user1@mail.ru", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "user1@mail.ru"], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 718ms (ActiveRecord: 0.8ms | Allocations: 2832)
+
+
+Started GET "/" for 127.0.0.1 at 2020-08-21 20:28:58 +0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered collection of posts/_post.html.erb [5 times] (Duration: 24.7ms | Allocations: 2010)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  Rendered posts/index.html.erb within layouts/application (Duration: 38.3ms | Allocations: 4126)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:26
+Completed 200 OK in 362ms (Views: 358.8ms | ActiveRecord: 1.3ms | Allocations: 13393)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2020-08-21 20:29:04 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+gXACkyVUY5RfnavdgWOIgDvetefpyCZvNjpnJQRGXFx2nKMDJkIu8vKCSyKToQuhBtFxeRnzoA1oh2PXF0sZw=="}
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 134ms (ActiveRecord: 3.0ms | Allocations: 2302)
+
+
+Started GET "/" for 127.0.0.1 at 2020-08-21 20:29:04 +0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered collection of posts/_post.html.erb [5 times] (Duration: 19.4ms | Allocations: 2005)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  Rendered posts/index.html.erb within layouts/application (Duration: 42.3ms | Allocations: 4100)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 130ms (Views: 127.3ms | ActiveRecord: 0.4ms | Allocations: 12503)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-08-21 20:29:07 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 4.1ms | Allocations: 137)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 19.6ms | Allocations: 1230)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 87ms (Views: 80.5ms | ActiveRecord: 0.0ms | Allocations: 9691)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-08-21 20:29:28 +0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"TgpdxwJ03h3JMi+Os2oOcT2cu0C7k8EkpbA2qT3Bm7Ueow3yGUUNRCBQSFGvEQWWy3Zt4K68qTtSeG0/NqQ1Xw==", "user"=>{"email"=>"pidr@mail.ru", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (3.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "pidr@mail.ru"], ["LIMIT", 1]]
+  [1m[36mUser Create (3.9ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["email", "pidr@mail.ru"], ["encrypted_password", "$2a$12$56OVV5V7MNVsTVyx3HC8e.bbpWOwH1/2NK6diMCT12pu8NbiQ3aFO"], ["confirmation_token", "57xySNHip5DihMjm9G95"], ["confirmation_sent_at", "2020-08-21 17:29:29.011211"], ["created_at", "2020-08-21 17:29:29.010868"], ["updated_at", "2020-08-21 17:29:29.010868"]]
+  [1m[35m (4.2ms)[0m  [1m[36mcommit transaction[0m
+  Rendering devise/mailer/confirmation_instructions.html.erb
+  Rendered devise/mailer/confirmation_instructions.html.erb (Duration: 2.3ms | Allocations: 1315)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 20.8ms
+Delivered mail 5f40047935117_9d713febb90370fc911bd@MacBook-Air-Tatana.local.mail (33.3ms)
+Date: Fri, 21 Aug 2020 20:29:29 +0300
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: pidr@mail.ru
+Message-ID: <5f40047935117_9d713febb90370fc911bd@MacBook-Air-Tatana.local.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome pidr@mail.ru!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=57xySNHip5DihMjm9G95">Confirm my account</a></p>
+
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 642ms (ActiveRecord: 11.8ms | Allocations: 25934)
+
+
+Started GET "/" for 127.0.0.1 at 2020-08-21 20:29:29 +0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered collection of posts/_post.html.erb [5 times] (Duration: 6.7ms | Allocations: 2010)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  Rendered posts/index.html.erb within layouts/application (Duration: 16.2ms | Allocations: 4106)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 50ms (Views: 46.3ms | ActiveRecord: 1.1ms | Allocations: 12676)
+
+
+Started GET "/users/confirmation?confirmation_token=57xySNHip5DihMjm9G95" for ::1 at 2020-08-21 20:29:33 +0300
+Processing by Devise::ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"57xySNHip5DihMjm9G95"}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."confirmation_token" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["confirmation_token", "57xySNHip5DihMjm9G95"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Update (1.8ms)[0m  [1m[33mUPDATE "users" SET "confirmed_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["confirmed_at", "2020-08-21 17:29:33.549168"], ["updated_at", "2020-08-21 17:29:33.551897"], ["id", 3]]
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 86ms (ActiveRecord: 7.5ms | Allocations: 6249)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-08-21 20:29:33 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 194)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 15.8ms | Allocations: 1187)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 83ms (Views: 79.4ms | ActiveRecord: 0.0ms | Allocations: 12855)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-08-21 20:29:44 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 194)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 12.0ms | Allocations: 1177)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 83ms (Views: 79.7ms | ActiveRecord: 0.0ms | Allocations: 9714)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-08-21 20:29:53 +0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered collection of posts/_post.html.erb [5 times] (Duration: 11.2ms | Allocations: 2004)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  Rendered posts/index.html.erb within layouts/application (Duration: 24.7ms | Allocations: 4097)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 65ms (Views: 61.8ms | ActiveRecord: 1.0ms | Allocations: 12465)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-08-21 20:30:58 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 4.0ms | Allocations: 194)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 32.4ms | Allocations: 1178)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 119ms (Views: 107.5ms | ActiveRecord: 0.0ms | Allocations: 9710)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-08-21 20:31:05 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"MmMZKMGB0RvWKwoMeUCn/GWE7WYCjvL32y7z/mlQhFIrKqUPTsgYY1ir5rPbIrbEswiEkh9gtHJEiVm9VxnL3w==", "user"=>{"email"=>"pidr@mail.ru", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "pidr@mail.ru"], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 409ms (ActiveRecord: 1.0ms | Allocations: 2808)
+
+
+Started GET "/" for 127.0.0.1 at 2020-08-21 20:31:06 +0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered collection of posts/_post.html.erb [5 times] (Duration: 14.6ms | Allocations: 2004)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  Rendered posts/index.html.erb within layouts/application (Duration: 26.9ms | Allocations: 4097)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:26
+Completed 200 OK in 73ms (Views: 68.4ms | ActiveRecord: 1.2ms | Allocations: 13316)
+
+
+Started GET "/posts/1/edit" for 127.0.0.1 at 2020-08-21 20:31:12 +0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:48:in `set_post'
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 7.6ms | Allocations: 1407)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 17.0ms | Allocations: 1726)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 197ms (Views: 180.8ms | ActiveRecord: 1.2ms | Allocations: 12109)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2020-08-21 20:31:14 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"dHAl56Kl8if52aGXOzL6NnD926ngN/kuJEIQpT8dmh7/gg3BnZg+EiQ/tgqgbFGPy6JnQlkdYV6YbFKqMJt/Vw=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 11ms (ActiveRecord: 0.5ms | Allocations: 2312)
+
+
+Started GET "/" for 127.0.0.1 at 2020-08-21 20:31:14 +0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered collection of posts/_post.html.erb [5 times] (Duration: 6.1ms | Allocations: 2006)
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  Rendered posts/index.html.erb within layouts/application (Duration: 14.4ms | Allocations: 4104)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 70ms (Views: 68.0ms | ActiveRecord: 0.9ms | Allocations: 12500)
+
+
+Started GET "/posts/1/edit" for 127.0.0.1 at 2020-08-21 20:31:16 +0300
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+Completed 401 Unauthorized in 9ms (ActiveRecord: 0.0ms | Allocations: 325)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-08-21 20:31:16 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 194)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1187)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 33ms (Views: 30.7ms | ActiveRecord: 0.0ms | Allocations: 9763)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-08-21 20:31:17 +0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered collection of posts/_post.html.erb [5 times] (Duration: 8.0ms | Allocations: 2004)
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  Rendered posts/index.html.erb within layouts/application (Duration: 22.6ms | Allocations: 4098)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 49ms (Views: 45.3ms | ActiveRecord: 1.5ms | Allocations: 12474)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-08-23 23:06:14 +0300
+  [1m[35m (17.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (20.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered collection of posts/_post.html.erb [5 times] (Duration: 1313.8ms | Allocations: 2229)
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  Rendered posts/index.html.erb within layouts/application (Duration: 2073.1ms | Allocations: 4615)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6204ms (Views: 5327.4ms | ActiveRecord: 21.2ms | Allocations: 14317)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2020-08-23 23:06:41 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (3.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:48:in `set_post'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 167.3ms | Allocations: 2293)
+Completed 500 Internal Server Error in 443ms (ActiveRecord: 3.8ms | Allocations: 3538)
+
+
+  
+ActionView::Template::Error (Missing partial posts/_disqus, application/_disqus with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/tatana/blog/app/views"
+  * "/Users/tatana/.rvm/gems/ruby-2.5.3/gems/devise-4.7.2/app/views"
+  * "/Users/tatana/.rvm/rubies/ruby-2.5.3/lib/ruby/gems/2.5.0/gems/actiontext-6.0.3.2/app/views"
+  * "/Users/tatana/.rvm/rubies/ruby-2.5.3/lib/ruby/gems/2.5.0/gems/actionmailbox-6.0.3.2/app/views"
+):
+    16: 		<%= @post.summary %>
+    17: 	</section>
+    18: </article>
+    19: <%= render 'disqus' %>
+  
+app/views/posts/show.html.erb:19
+Started GET "/posts/1" for 127.0.0.1 at 2020-08-23 23:09:29 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (3.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:48:in `set_post'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_disqus.html.erb (Duration: 4.9ms | Allocations: 129)
+  Rendered posts/show.html.erb within layouts/application (Duration: 31.7ms | Allocations: 883)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 220ms (Views: 172.7ms | ActiveRecord: 3.7ms | Allocations: 11069)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2020-08-23 23:20:57 +0300
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:48:in `set_post'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_disqus.html.erb (Duration: 6.7ms | Allocations: 153)
+  Rendered posts/show.html.erb within layouts/application (Duration: 42.5ms | Allocations: 904)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 304ms (Views: 251.1ms | ActiveRecord: 1.1ms | Allocations: 11097)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-08-23 23:22:11 +0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered collection of posts/_post.html.erb [5 times] (Duration: 31.6ms | Allocations: 2223)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  Rendered posts/index.html.erb within layouts/application (Duration: 81.2ms | Allocations: 4603)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 239ms (Views: 212.9ms | ActiveRecord: 1.8ms | Allocations: 13137)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2020-08-23 23:22:13 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:48:in `set_post'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_disqus.html.erb (Duration: 0.2ms | Allocations: 8)
+  Rendered posts/show.html.erb within layouts/application (Duration: 4.9ms | Allocations: 399)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 90ms (Views: 74.8ms | ActiveRecord: 0.6ms | Allocations: 9262)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2020-08-23 23:22:28 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:48:in `set_post'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_disqus.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 396)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 69ms (Views: 63.5ms | ActiveRecord: 0.2ms | Allocations: 9265)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-08-23 23:23:02 +0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered collection of posts/_post.html.erb [5 times] (Duration: 29.7ms | Allocations: 2003)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  Rendered posts/index.html.erb within layouts/application (Duration: 83.6ms | Allocations: 4097)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 246ms (Views: 211.8ms | ActiveRecord: 2.0ms | Allocations: 12478)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2020-08-23 23:23:03 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (3.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:48:in `set_post'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_disqus.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered posts/show.html.erb within layouts/application (Duration: 5.5ms | Allocations: 399)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 190ms (Views: 168.9ms | ActiveRecord: 3.5ms | Allocations: 9267)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-08-23 23:23:16 +0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered collection of posts/_post.html.erb [5 times] (Duration: 24.5ms | Allocations: 2003)
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  Rendered posts/index.html.erb within layouts/application (Duration: 67.3ms | Allocations: 4098)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 181ms (Views: 158.7ms | ActiveRecord: 2.6ms | Allocations: 12489)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2020-08-23 23:23:16 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:48:in `set_post'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_disqus.html.erb (Duration: 0.2ms | Allocations: 8)
+  Rendered posts/show.html.erb within layouts/application (Duration: 4.7ms | Allocations: 398)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 126ms (Views: 115.8ms | ActiveRecord: 0.2ms | Allocations: 9260)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2020-08-23 23:35:42 +0300
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:48:in `set_post'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_disqus.html.erb (Duration: 0.2ms | Allocations: 8)
+  Rendered posts/show.html.erb within layouts/application (Duration: 32.5ms | Allocations: 396)
+DEPRECATION WARNING: autoprefixer-rails was deprected. Migration guide:
+https://github.com/ai/autoprefixer-rails/wiki/Deprecated (called from process at /Users/tatana/.rvm/gems/ruby-2.5.3/gems/autoprefixer-rails-9.8.6.2/lib/autoprefixer-rails/processor.rb:23)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 5179ms (Views: 5136.6ms | ActiveRecord: 0.9ms | Allocations: 79702)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-08-23 23:35:51 +0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered collection of posts/_post.html.erb [5 times] (Duration: 22.7ms | Allocations: 2003)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  Rendered posts/index.html.erb within layouts/application (Duration: 47.2ms | Allocations: 4119)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 120ms (Views: 107.1ms | ActiveRecord: 1.3ms | Allocations: 12502)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2020-08-23 23:35:53 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:48:in `set_post'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_disqus.html.erb (Duration: 0.6ms | Allocations: 8)
+  Rendered posts/show.html.erb within layouts/application (Duration: 6.6ms | Allocations: 399)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 58ms (Views: 46.5ms | ActiveRecord: 0.3ms | Allocations: 9254)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-08-23 23:35:58 +0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered collection of posts/_post.html.erb [5 times] (Duration: 16.7ms | Allocations: 2003)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  Rendered posts/index.html.erb within layouts/application (Duration: 62.2ms | Allocations: 4097)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 123ms (Views: 112.6ms | ActiveRecord: 1.5ms | Allocations: 12464)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2020-08-23 23:35:59 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:48:in `set_post'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_disqus.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered posts/show.html.erb within layouts/application (Duration: 2.3ms | Allocations: 398)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 300ms (Views: 289.7ms | ActiveRecord: 0.3ms | Allocations: 9249)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2020-08-23 23:39:14 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (4.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:48:in `set_post'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_disqus.html.erb (Duration: 5.6ms | Allocations: 151)
+  Rendered posts/show.html.erb within layouts/application (Duration: 49.3ms | Allocations: 907)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 592ms (Views: 499.9ms | ActiveRecord: 4.6ms | Allocations: 11101)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-08-23 23:39:19 +0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered collection of posts/_post.html.erb [5 times] (Duration: 35.0ms | Allocations: 2223)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  Rendered posts/index.html.erb within layouts/application (Duration: 76.5ms | Allocations: 4580)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 182ms (Views: 162.2ms | ActiveRecord: 0.6ms | Allocations: 13106)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-08-24 12:53:09 +0300
+  [1m[35m (7.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered collection of posts/_post.html.erb [5 times] (Duration: 83.5ms | Allocations: 2005)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  Rendered posts/index.html.erb within layouts/application (Duration: 176.5ms | Allocations: 4122)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 581ms (Views: 496.9ms | ActiveRecord: 1.7ms | Allocations: 12502)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-08-24 12:53:25 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 22.7ms | Allocations: 211)
+  Rendered devise/shared/_links.html.erb (Duration: 16.3ms | Allocations: 554)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 129.4ms | Allocations: 2491)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 288ms (Views: 245.2ms | ActiveRecord: 0.0ms | Allocations: 12003)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-08-25 14:17:04 +0300
+  [1m[35m (6.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (17.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered collection of posts/_post.html.erb [5 times] (Duration: 109.1ms | Allocations: 2224)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  Rendered posts/index.html.erb within layouts/application (Duration: 1471.2ms | Allocations: 4609)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 2001ms (Views: 1717.3ms | ActiveRecord: 17.2ms | Allocations: 14304)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2020-08-25 14:17:09 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:48:in `set_post'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_disqus.html.erb (Duration: 6.2ms | Allocations: 172)
+  Rendered posts/show.html.erb within layouts/application (Duration: 56.1ms | Allocations: 926)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 178ms (Views: 144.2ms | ActiveRecord: 0.6ms | Allocations: 9951)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-08-25 14:17:38 +0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (8.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered collection of posts/_post.html.erb [5 times] (Duration: 77.6ms | Allocations: 2005)
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  Rendered posts/index.html.erb within layouts/application (Duration: 242.5ms | Allocations: 4105)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 681ms (Views: 641.9ms | ActiveRecord: 9.6ms | Allocations: 12477)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2020-08-25 14:17:40 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:48:in `set_post'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_disqus.html.erb (Duration: 0.2ms | Allocations: 9)
+  Rendered posts/show.html.erb within layouts/application (Duration: 12.3ms | Allocations: 400)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 529ms (Views: 496.5ms | ActiveRecord: 0.8ms | Allocations: 9260)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-08-25 14:17:48 +0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered collection of posts/_post.html.erb [5 times] (Duration: 25.8ms | Allocations: 2003)
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  Rendered posts/index.html.erb within layouts/application (Duration: 85.2ms | Allocations: 4097)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 241ms (Views: 213.6ms | ActiveRecord: 2.6ms | Allocations: 12474)
+
+
+Started GET "/posts/3" for 127.0.0.1 at 2020-08-25 14:17:50 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:48:in `set_post'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_disqus.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered posts/show.html.erb within layouts/application (Duration: 8.2ms | Allocations: 517)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 106ms (Views: 98.2ms | ActiveRecord: 0.5ms | Allocations: 9380)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-08-25 14:17:55 +0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered collection of posts/_post.html.erb [5 times] (Duration: 24.1ms | Allocations: 2005)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  Rendered posts/index.html.erb within layouts/application (Duration: 52.9ms | Allocations: 4099)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 169ms (Views: 159.1ms | ActiveRecord: 0.5ms | Allocations: 12471)
+
+
+Started GET "/?page=2" for 127.0.0.1 at 2020-08-25 14:17:57 +0300
+Processing by PostsController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 5]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered collection of posts/_post.html.erb [2 times] (Duration: 6.7ms | Allocations: 492)
+  Rendered posts/index.html.erb within layouts/application (Duration: 23.2ms | Allocations: 1816)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 129ms (Views: 123.3ms | ActiveRecord: 0.5ms | Allocations: 10194)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-08-25 14:17:59 +0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered collection of posts/_post.html.erb [5 times] (Duration: 32.3ms | Allocations: 2003)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  Rendered posts/index.html.erb within layouts/application (Duration: 54.3ms | Allocations: 4097)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 210ms (Views: 204.2ms | ActiveRecord: 2.3ms | Allocations: 12471)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-08-25 14:18:12 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 10.0ms | Allocations: 611)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 85.9ms | Allocations: 2061)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 250ms (Views: 214.6ms | ActiveRecord: 0.0ms | Allocations: 11660)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-08-25 14:18:17 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 3.8ms | Allocations: 211)
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 139)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 40.3ms | Allocations: 1930)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 97ms (Views: 93.0ms | ActiveRecord: 0.0ms | Allocations: 11054)
+
+
+Started GET "/posts" for 127.0.0.1 at 2020-08-25 14:18:19 +0300
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered collection of posts/_post.html.erb [5 times] (Duration: 8.1ms | Allocations: 2010)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  Rendered posts/index.html.erb within layouts/application (Duration: 21.5ms | Allocations: 4107)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 70ms (Views: 62.5ms | ActiveRecord: 2.4ms | Allocations: 12487)
+
+
+Started GET "/?page=2" for 127.0.0.1 at 2020-08-25 18:59:35 +0300
+  [1m[35m (4.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PostsController#index as HTML
+  Parameters: {"page"=>"2"}
+Started GET "/posts" for 127.0.0.1 at 2020-08-25 18:59:36 +0300
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 5]]
+  ↳ app/views/posts/index.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  Rendered collection of posts/_post.html.erb [2 times] (Duration: 153.8ms | Allocations: 1588)
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 324.4ms | Allocations: 3184)
+  [1m[36mPost Load (3.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" LIMIT ? OFFSET ?[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/posts/index.html.erb:3
+  Rendered collection of posts/_post.html.erb [5 times] (Duration: 47.5ms | Allocations: 2328)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:5
+  Rendered posts/index.html.erb within layouts/application (Duration: 120.0ms | Allocations: 5890)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 909ms (Views: 812.5ms | ActiveRecord: 0.9ms | Allocations: 23961)
+
+
+Completed 200 OK in 299ms (Views: 286.0ms | ActiveRecord: 3.5ms | Allocations: 20327)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2020-08-25 19:01:53 +0300
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (38.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:48:in `set_post'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_disqus.html.erb (Duration: 1.7ms | Allocations: 9)
+  Rendered posts/show.html.erb within layouts/application (Duration: 37.7ms | Allocations: 401)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 806ms (Views: 668.5ms | ActiveRecord: 38.1ms | Allocations: 9277)
+
+

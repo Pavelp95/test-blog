@@ -22,9 +22,9 @@
         </ul>
     <%# <%= link_to 'Новая Статья', new_post_path, class: "btn btn-outline-primary pull-xs-right" %>
 
-        <ul class="nav navbar-nav, list-inline">
+        <ul class="nav navbar-nav, list-inline, centr">
           <% if user_signed_in? %>
-            <li class="nav-item">
+          <li class="nav-item">
             <%= link_to "Выход", destroy_user_session_path, method: :delete, class: "nav-link"%> 
           </li>
           <% else %>
@@ -38,6 +38,7 @@
         </ul>
       </nav>
     </div>
+
     <div class="container main">
       <div class="row">
         <div class="col-md-12">
@@ -49,7 +50,11 @@
           <% end %>
         </div>
       </div>
-      <%= yield %>
+      <div class="row">
+        <div class="cpl-md-9">
+          <%= yield %>
+        </div>
+      </div>
     </div>
   </body>
 </html>
