@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
-
+	decorates_assigned :posts, :post   #чтобы не писать "@" перед словом post and posts
 	before_action :authenticate_user!, except: [ :index, :show ]
-	
+
 	before_action :set_post, only: [ :show, :edit, :update ]
 
 	def index
@@ -20,7 +20,7 @@ class PostsController < ApplicationController
 
 		if @post.save
 			redirect_to @post
-		else 
+		else
 		  	render :new
 		end
 	end
@@ -31,12 +31,12 @@ class PostsController < ApplicationController
 	def update
 		if @post.update_attributes(post_params)
 			redirect_to @post, sucсess: 'Статья успешно обновлена'
-		else 
+		else
 			render :edit, danger: 'Статья не обнавлена'
 		end
 	end
 
-	def destroy 
+	def destroy
 		@post = Post.find(params[:id])
 		@post.destroy
 		redirect_to post_path
@@ -51,4 +51,4 @@ class PostsController < ApplicationController
 	def post_params
 		params.require(:post).permit(:title, :summary, :body, :image)
 	end
-end 
+end

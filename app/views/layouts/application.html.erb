@@ -20,12 +20,15 @@
             <a class="nav-link" href="https://vk.com/">Контакты</a>
           </li>
         </ul>
-    <%# <%= link_to 'Новая Статья', new_post_path, class: "btn btn-outline-primary pull-xs-right" %>
+    <%= link_to 'Новая Статья', new_post_path, class: "btn btn-outline-primary pull-xs-right" %>
 
         <ul class="nav navbar-nav, list-inline, centr">
           <% if user_signed_in? %>
           <li class="nav-item">
-            <%= link_to "Выход", destroy_user_session_path, method: :delete, class: "nav-link"%> 
+            <%= link_to current_user.email, persons_profile_path  %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Выход", destroy_user_session_path, method: :delete, class: "nav-link"%>
           </li>
           <% else %>
           <li class="nav-item">
